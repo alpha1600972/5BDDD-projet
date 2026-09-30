@@ -8,7 +8,7 @@ Fichier de configuration pour la connexion à la base de données Oracle.
 Ce fichier utilise SQLAlchemy pour créer un moteur de base de données et une session locale.
 '''
 
-engine = create_engine(settings.database_url, echo=False)
+engine = create_engine(settings.DATABASE_URL, echo=False)
 
 SessionLocal = sessionmaker(bind=engine, autoflush=False, autocommit=False)
 

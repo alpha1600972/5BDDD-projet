@@ -20,7 +20,7 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 
     @property
-    def database_url(self) -> str:
+    def DATABASE_URL(self) -> str:
         return (
             f"oracle+oracledb://{self.ORACLE_USER}:{self.ORACLE_PASSWORD}"
             f"@{self.ORACLE_HOST}:{self.ORACLE_PORT}"
