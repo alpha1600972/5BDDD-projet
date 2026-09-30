@@ -4,3 +4,7 @@ sqlalchemy
 alembic
 oracledb
 pydantic-settings
+PyJWT
+bcrypt
+python-multipart
+email-validator
